@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ maxWidth: `1000px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `100%`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
   </Layout>
