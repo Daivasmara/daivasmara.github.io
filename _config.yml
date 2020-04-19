@@ -2,17 +2,17 @@
 ## Docs: https://hexo.io/docs/configuration.html # Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Daivasmara
+subtitle: 'In searching of answers'
+description: 'Compilations of Muhammad Daivasmara Denaw journey through the process of searching for answers.'
 keywords:
-author: John Doe
+author: Muhammad Daivasmara Denaw
 language: en
-timezone: ''
+timezone: 'Asia/Jakarta'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://daivasmara.github.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -50,12 +50,12 @@ highlight:
   tab_replace:
   wrap: true
   hljs: false
-codemirror:
-  modes: ['javascript', 'css', 'xml', 'htmlmixed', 'clike', 'php', 'shell', 'python']
+
 search:
   path: search.xml
   field: post
   content: true
+
 mathjax: true
 
 # Home page setting
