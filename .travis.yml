@@ -2,10 +2,15 @@ sudo: false
 language: node_js
 node_js:
   - 12.16.2 # use nodejs v10 LTS
-cache: npm
 branches:
   only:
     - develop # build develop branch only
+before_install:
+- cd themes/obsidian
+- yarn
+- cd ../..
+install:
+- yarn
 script:
   - hexo generate # generate static files
 deploy:
