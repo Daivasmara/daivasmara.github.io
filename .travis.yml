@@ -7,15 +7,15 @@ branches:
     - develop
 before_install:
 - cd themes/obsidian
-- yarn
-- hexo clean
-- hexo generate
+- npm i
+- npx hexo clean
+- npx hexo generate
 - cd ../..
 install:
-- yarn
+- npm i
 script:
-  - hexo clean
-  - hexo generate
+  - npx hexo clean
+  - npx hexo generate
 deploy:
   provider: pages
   skip-cleanup: true
