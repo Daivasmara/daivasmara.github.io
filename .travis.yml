@@ -1,10 +1,10 @@
 sudo: false
 language: node_js
 node_js:
-  - 12.16.2 # use nodejs v10 LTS
+  - 12.16.2
 branches:
   only:
-    - develop # build develop branch only
+    - develop
 before_install:
 - cd themes/obsidian
 - yarn
@@ -12,12 +12,12 @@ before_install:
 install:
 - yarn
 script:
-  - hexo generate # generate static files
+  - hexo clean
+  - hexo generate
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GH_TOKEN
-  keep-history: true
   target_branch: master
   on:
     branch: develop
