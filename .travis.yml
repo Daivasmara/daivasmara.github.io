@@ -7,6 +7,8 @@ branches:
     - develop
 before_install:
 - cd themes/obsidian
+- hexo clean
+- hexo generate
 - yarn
 - cd ../..
 install:
