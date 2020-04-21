@@ -8,16 +8,14 @@ branches:
 before_install:
 - cd themes/obsidian
 - npm i
-- npx hexo clean
-- npx hexo generate
 - cd ../..
 install:
 - npm i
 script:
-  - npx hexo clean
   - npx hexo generate
 deploy:
   provider: pages
+  fqdn: daivasmara.com
   skip-cleanup: true
   github-token: $GH_TOKEN
   target_branch: master
