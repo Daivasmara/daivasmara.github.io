@@ -12,6 +12,7 @@ before_install:
 install:
 - npm i
 script:
+  - npx hexo clean
   - npx hexo generate
 deploy:
   provider: pages
