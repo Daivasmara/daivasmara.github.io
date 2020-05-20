@@ -10,10 +10,10 @@ cover: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg'
 ---
 ![My Vim](https://i.imgur.com/jQtmpW5.png)
 
-Okay so first of all, a friendly disclaimer: <ins>**I'm not a vim expert by any means.**</ins> This is just a fun, opiniated and subjective article on what plugins and settings I'm using on my vim and why. By the time I'm writing this article, it's when I feel like my **.vimrc** is stable enough that I haven't change or update anything for more than a week. I know, a week? really? **YES** really. I used to change or update it every day. So a week is extremely good for me. Therefore it's **in my opinion** a good time to make this post. Although another disclaimer is that this **.vimrc** is far from done and will keep updated every time I feel like it or in some cases **needed** to.
+Okay so first of all, a friendly disclaimer: <ins>**I'm not a vim expert by any means.**</ins> This is just a fun, opiniated/subjective article on what plugins and settings I'm using on my vim and why. By the time I'm writing this article, it's when I feel like my **.vimrc** is stable enough that I haven't change or update anything for _more or less_ a month. Considering I'm used to changing or updating it every _few hours_, then a week is probably good enough, _isn't it?_. Therefore it's **in my opinion** a good time to make this post. Although another disclaimer is that this **.vimrc** is far from done and will keep updated every time I feel like it or in some cases **needed** to.
 
 ## Introduction
-In order to for you to get a better context, this vim setup is used daily by me a **full time javascript engineer** who's currently learning **rust** and do some **python** on the side.
+In order to for you to get a better context, this vim setup is used daily by me a **full time javascript engineer** who's currently doing some **python** and **rust** on the side.
 
 ## .vimrc
 ```vim
@@ -27,6 +27,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/goyo.vim'
+Plug 'vimwiki/vimwiki'
 Plug 'voldikss/vim-floaterm'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
@@ -60,6 +61,8 @@ set number relativenumber
 set laststatus=2
 set noshowmode
 set updatetime=250
+set nocompatible
+filetype plugin on
 
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
@@ -76,7 +79,6 @@ autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
 let g:python3_host_prog = '/usr/bin/python3.8'
 let g:python_host_prog = '/usr/bin/python2.7'
-let g:node_host_prog = '/usr/bin/npm'
 let g:loaded_ruby_provider = 0
 let g:floaterm_keymap_toggle = '<Leader>`'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*js,*jsx'
