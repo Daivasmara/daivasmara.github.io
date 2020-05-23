@@ -39,7 +39,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
-Plug 'heavenshell/vim-jsdoc'
 Plug 'ap/vim-css-color'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'rust-lang/rust.vim'
@@ -202,10 +201,6 @@ nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
-
-"JSDoc
-let g:jsdoc_allow_input_prompt = 1
-let g:jsdoc_enable_es6 = 1
 
 "Jedi
 let g:jedi#goto_definitions_command = "gd"
