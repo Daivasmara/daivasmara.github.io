@@ -223,7 +223,7 @@ colorscheme challenger_deep
 For theme I'm using [Challenger Deep](https://github.com/challenger-deep-theme/vim). I can't really say much other than I love the color scheme it provides. It is so me.
 
 ### Fuzzy Search
-![Fuzzy Search using FSF + RipGrep](https://i.imgur.com/LCL7wl2.png)
+![Fuzzy Search using FZF + RipGrep](https://i.imgur.com/LCL7wl2.png)
 
 **.vimrc**
 ```vim
