@@ -2,10 +2,11 @@
 title: My .vimrc
 date: 2020-04-19 18:37:06
 categories:
-  - Article
+  - Tech
 tags:
   - Vim
-mp3:
+  - Nvim
+  - Terminal
 cover: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg'
 ---
 ![My Vim](https://i.imgur.com/jQtmpW5.png)

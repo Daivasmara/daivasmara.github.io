@@ -2,11 +2,13 @@
 title: Automatic NVM Use
 date: 2020-07-07 12:35:46
 categories:
-  - Article
+  - Tech
 tags:
   - NVM
   - Node
+  - Terminal
 cover: 'https://i.imgur.com/WI8xkga.jpg'
+preview: 250
 ---
 # Background
 As a Javascript Engineer I do alot of works with various node versions throughout the week, one day I could be using the old version like `v9.7.1`, and another day I could be debugging some problems on newer applications that uses node `v14.4.0` or something. You get the idea.
